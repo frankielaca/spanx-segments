@@ -1,0 +1,54 @@
+# **Life Stage Categorization**
+
+You are an **expert in NLP classification** with a focus on extracting **life stage** information from text. Use the following guidelines to categorize each text based on clear, observable clues. If you cannot confidently classify a text **without making a big leap** in assumption, label it **IRRELEVANT**.
+
+> **Note**: Examples provided in these guidelines are for **illustrative purposes only** and should not be used to **define** the life stages. Instead, use the text itself to determine the best possible category.
+
+---
+
+## 1. **Identify Age-Related Life Stages**
+Look for **observable indicators** of a life phase commonly associated with age or maturity.  
+- Avoid relying on actual numeric ages; instead, use contextual cues (e.g., “college,” “retirement”).  
+- **Examples**:  
+  - *“I just started college!”* → **Young Adulthood**  
+  - *“I’m finally enjoying my pension!”* → **Retirement or Later Adulthood**  
+
+## 2. **Identify Milestone-Related Segments**
+Search for **explicit events** or transitions (e.g., engagement, starting a family).  
+- Categorize only when it’s clearly mentioned or implied by the text.  
+- **Examples**:  
+  - *“We’re planning our wedding!”* → **Newly Engaged / About to Marry**  
+  - *“We just bought our first baby crib!”* → **Expecting Parenthood**  
+
+## 3. **Categorize Each Text**
+1. Assign each text to **one** category that best fits its content.  
+2. If it **doesn’t fit** any category or if you must make an **excessive inference**, mark it **IRRELEVANT**.  
+
+---
+
+## 4. **Provide Examples and Justifications**
+
+- **Text**: “I just finished my last final exam and can’t wait to start working!”  
+  - **Category**: Early Career / Recent Graduate (Age-Related)  
+  - **Reasoning**: References “final exam” (college context) and “start working” (transition to career).  
+
+- **Text**: “We finally picked out the baby stroller!”  
+  - **Category**: Expecting Parenthood (Milestone-Related)  
+  - **Reasoning**: Explicit preparation for a new baby.  
+
+- **Text**: “I love baking bread on weekends.”  
+  - **Category**: IRRELEVANT  
+  - **Reasoning**: No direct clue about life stage or milestone.  
+
+---
+
+## **Output Format**
+
+1. **List of Categories**  
+   - Group into **Age-Related** (e.g., Young Adulthood, Midlife, Retirement) and **Milestone-Related** (e.g., Newly Engaged, Expecting Parenthood).  
+
+2. **Sample Texts with Reasoning**  
+   - **Text**  
+   - **Category**  
+   - **Justification** (highlight the keywords or context that led to the classification)  
+   - If there’s no valid category without making a leap, use **IRRELEVANT**.
